@@ -6,7 +6,14 @@
   3. Robert Todd
   4. [Bastien Y. Queste](https://github.com/bastienqueste), *Department of Marine Science, University of Gothenburg, Gothenburg, Sweden,* [0000-0002-3786-2275](https://orcid.org/0000-0002-3786-2275)
   1. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
-.... to be finished
+  2. Pierre Testor 
+  3. Daniel L. Rudnick 
+  4. JongJin Park 
+  5. Ilker Fer
+  6. Orens de Fommervault
+  7. Jake Steinberg
+  8. Estelle Dumont
+  9. James Bennett
 
 ## SOP development process
 1) Initial SOP was drafted by Alice Pietri, Anthony Bosse and Robert Todd.
@@ -48,5 +55,3 @@ James Bennett - provided information and wrote text on seaglider specificities a
 Orens de Fommervault - provided information and wrote text on seaexplorer specificities and procedures. 
 
 Ilker Fer - provided information on slocum procedures in particular on the mission execution. 
-
-
