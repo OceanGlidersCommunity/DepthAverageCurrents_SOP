@@ -24,11 +24,11 @@ Additional authors joined: Bastien Y.Queste, Orens de Fommervault, Jim Bennett, 
 7) Additional authors joined on GitHub during the community review: 
 
 ## Contributions 
-Alice Pietri ...
+Alice Pietri participated in the initial redaction of this SOP  together with Anthony Bosse, Robert Todd and Soeren Thomsen. Ensured the integrity of the structure of the document and revised the draft regularly. 
 
-Anthony Bosse ... 
-
-Robert Todd ... 
+Anthony Bosse participated in the initial redaction of this SOP together with Alice Pietri, Robert Todd and Soeren Thomsen. Provided various inputs and oversaw the integration of inputs by other authors. 
+ 
+Robert Todd participated in the initial draft of the SOP together with Alice Pietri and Anthony Bosse, wrote several parts of this document and of the DMQC section. 
 
 [Bastien Y. Queste](https://github.com/bastienqueste) wrote several paragraphs and provided inputs.  
 Joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021. 
@@ -37,7 +37,16 @@ Joined the two expert sessions during the OceanGliders Best Practice Workshop in
 He coordinated the whole development process including organising multiple meetings, e.g. two expert sessions during the OceanGliders Best Practice Workshop. 
 He supported the migration to and will help to maintain the SOP on GitHub.
 
-all authors to be added
+Pierre Testor - 
 
+Daniel L. Rudnick - 
+
+JongJin Park - wrote text and added figures on compass error to the compass calibration section and provided various inputs.  
+
+James Bennett - provided information and wrote text on seaglider specificities and procedures. 
+
+Orens de Fommervault - provided information and wrote text on seaexplorer specificities and procedures. 
+
+Ilker Fer - provided information on slocum procedures in particular on the mission execution. 
 
 
