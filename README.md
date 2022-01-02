@@ -1,5 +1,7 @@
 ![oceangliders](images/logo-ocean-gliders.png)
 
+WORK IN PROGRESS until January 7
+
 # OceanGliders Depth Average Currents (DACs) SOP
 
 This [GitHub repository](https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP) is for the [OceanGliders](https://www.oceangliders.org) Depth Average Currents (DACs) Standard Operating Procedure (SOP).
