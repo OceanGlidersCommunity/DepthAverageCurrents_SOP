@@ -20,13 +20,13 @@ Co-authors are encouraged to periodically review GitHub activity as co-authorshi
 ## How to contribute
 Please read our [Code of Conduct](add link when final) before contributing.
 
-Important: We aim to have an organized discussion. Thus before adding new comments below sections, please always look at [open issues](https://github.com/OceanGlidersCommunity/Oxygen_SOP/issues) and join the ongoing dicussion there.
+Important: We aim to have an organized discussion. Thus before adding new comments below sections, please always look at [open issues](https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/issues) and join the ongoing dicussion there.
 
-You can contribute in two ways: [Case 1](https://github.com/OceanGlidersCommunity/Oxygen_SOP/blob/main/CONTRIBUTING.md#case-1-comment-directly-on-the-online-document-without-knowing-github) - comment directly on the online document, [Case 2](https://github.com/OceanGlidersCommunity/Oxygen_SOP/blob/main/CONTRIBUTING.md#case-2-make-a-concrete-suggestion-to-the-online-document-via-a-pull-request) - make a concrete suggestion to the online document via a pull request
+You can contribute in two ways: [Case 1](https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/blob/main/CONTRIBUTING.md#case-1-comment-directly-on-the-online-document-without-knowing-github) - comment directly on the online document, [Case 2](https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/blob/main/CONTRIBUTING.md#case-2-make-a-concrete-suggestion-to-the-online-document-via-a-pull-request) - make a concrete suggestion to the online document via a pull request
 
 ### Case 1: Comment directly on the online document without knowing GitHub.
 
-1. Read the Oxygen SOP [here](https://oceangliderscommunity.github.io/Oxygen_SOP/sections/oxygen_introduction.html)
+1. Read the Depth Average Currents SOP [here](https://oceangliderscommunity.github.io/DepthAverageCurrents_SOP/sections/DACs_introduction.html)
 
 2) Scroll down to make your comment at the end of each section. 
 
@@ -47,7 +47,7 @@ You can contribute in two ways: [Case 1](https://github.com/OceanGlidersCommunit
 
 In general, we suggest to start a discussion (‘issue”) before directly editing the document via a “pull-request”. In particular if you request ‘major changes’. Editing the documents directly will require some basic [markdown](https://guides.github.com/features/mastering-markdown/) knowledge.
 
-1. Read the Oxygen SOP [here](https://oceangliderscommunity.github.io/Oxygen_SOP/sections/oxygen_introduction.html)
+1. Read the Oxygen SOP [here](https://oceangliderscommunity.github.io/DepthAverageCurrents_SOP/sections/DACs_introduction.html)
 2. Scroll up, move your mouse over the GitHub symbol and click "suggest edit".
 
 ![edit_markdown_file](images/suggest_edit_01.png)
@@ -58,4 +58,4 @@ In general, we suggest to start a discussion (‘issue”) before directly editi
 7. The SOP team will review your changes as outline above, and if approved, the process is complete and you're done.
 8. All contributers will be listed as co-authors on the next peer-reviewed publication.
 
-We are happy to provide individual training sessions for people who are new on GitHub. Please indicate your interest [here](https://github.com/OceanGlidersCommunity/Oxygen_SOP/discussions/133) so we can organize sessions.
+We are happy to provide individual training sessions for people who are new on GitHub. Please indicate your interest [here](https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/discussions/133) so we can organize sessions.
