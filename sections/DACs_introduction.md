@@ -16,3 +16,8 @@ It aims to result in high quality data and further ensures a data flow both for 
 | Merckelbach, L., Smeed, D., & Griffiths, G. (2010). Vertical water velocities from underwater gliders. Journal of Atmospheric and Oceanic Technology, 27(3), 547-563. | Sloum (flight) | https://doi.org/10.1175/2009JTECHO710.1 |
 | Merckelbach, L. M., Briggs, R. D., Smeed, D. A., & Griffiths, G. (2008, March). Current measurements from autonomous underwater gliders. In 2008 ieee/oes 9th working conference on current measurement technology (pp. 61-67). IEEE. | Slocum (flight) | https://doi.org/10.1109/CCM.2008.4480845 |
 | Davis, R. E., Kessler, W. S., & Sherman, J. T. (2012). Gliders measure western boundary current transport from the South Pacific to the equator. Journal of Physical Oceanography, 42(11), 2001-2013. | Spray (flight) | https://doi.org/10.1175/JPO-D-12-022.1 |
+|   |   |  |
+|   |   |  |
+|   |   |  |
+|   |   |  |
+|   |   |  |
