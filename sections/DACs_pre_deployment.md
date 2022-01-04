@@ -42,7 +42,20 @@ It is also recommended to:
 - To set the actuators in neutral position
 
 ## Compass error
-- XXX
+There is a way to quantify compass error after calibration. 
+That may be worthwhile to be addressed. 
+People often do that on land. 
+Our team is checking the compass error all the time before deployment. 
+After calibration, the compass error is around 1 deg or less. 
+After a month-long mission, the error does not change much in our case. If not doing the compass calibration, the error goes up to 5deg usually and up to more than 10 deg (an exceptional case). 
+
+If it helps, I added  figures of compass error measured before and after compass calibration.
+
+- images
+
+I have looked up the old compass error estimates according to pitch, since Pierre asked about it. Note that those results are before compass calibration. Once being done with calibration, such pitch-dependency of compass error is not much significant.
+
+- images
 
 ## Antifounling
 - XXX
