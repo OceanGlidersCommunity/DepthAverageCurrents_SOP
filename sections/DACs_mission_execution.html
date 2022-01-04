@@ -270,6 +270,48 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calibration-at-sea">
+   5.1. Calibration at sea
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slocum">
+     5.1.1. Slocum
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference-samples">
+   5.2. Reference samples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seaglider">
+     5.2.1. Seaglider
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spray">
+     5.2.2. Spray
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#piloting-recommendations">
+   5.3. Piloting recommendations
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -280,6 +322,48 @@ commentsRunWhenDOMLoaded(addUtterances);
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="missions-execution">
 <h1><span class="section-number">5. </span>Missions execution<a class="headerlink" href="#missions-execution" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="calibration-at-sea">
+<h2><span class="section-number">5.1. </span>Calibration at sea<a class="headerlink" href="#calibration-at-sea" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="slocum">
+<h3><span class="section-number">5.1.1. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h3>
+<p>Slocum gliders offer the possibility to recalibrate the compass at sea.
+Using an in situ compass calibration function in the glider software, the glider receives a command to calibrate its own compass while deployed and it will do a series of vertical spirals in the water column, saving the raw data from the compass so it can be sent off and processed onshore.
+The data is run through a calibration tool, and if the results are satisfactory, the operator can send the new calibration file back onto the glider for it to use.
+This gives you the ability to do a QC check on the data before it takes effect and to revert back to the old calibration if something goes wrong.
+While the at sea calibration is not thoroughly tested within the community, it is expected to perform fine; however, when there is the option, we recommend calibrating in the lab where the glider can be moved through a wider range of angles.</p>
+</div>
+</div>
+<div class="section" id="reference-samples">
+<h2><span class="section-number">5.2. </span>Reference samples<a class="headerlink" href="#reference-samples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="seaglider">
+<h3><span class="section-number">5.2.1. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h3>
+<p>To ensure accurate DAC estimates, two in-situ compass calibration dives are also recommended at the start of a mission in which the glider flies at varied pitch and roll angles.
+These dives are carried out such that hard and soft iron corrections can be estimated and applied to magnetometer data (for Deepglider, this includes some distortion caused by the battery pack) to account for any residual distortions introduced between assembly and deployment.</p>
+<p>Collection of magnetometer data needs to be enabled during deployment in order to apply compass calibrations in DM processing ($COMPASS_USE,4)</p>
+</div>
+<div class="section" id="spray">
+<h3><span class="section-number">5.2.2. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h3>
+<p>Measurements of water velocity relative to a glider from the nearest sampling cells of onboard ADCPs have been used to measure Spray glider motion through the water (Todd et al. 2017).
+For gliders that experience severe biofouling, ADCP measurements can be used to determine time-varying angles of attack and sideslip during a mission.
+Use of these varying angles in the flight model (including sideslip as in Todd et al. 2017 and Davis et al. 2012) can improve DAC estimates for badly fouled gliders by removing much of the correlation with a glider’s direction of motion.</p>
+<p>Rudnick et al. (2018) describe a platform-independent procedure for estimating the accuracy of glider-based DAC estimates.
+DAC estimates before and after a glider switch directions along a repeated transect are compared.
+This technique is best applied in deep water where the assumption that actual ocean currents are identical before and after a turn is most valid.</p>
+<p>Rudnick et al. (2013) show an estimate of the changing drag coefficient of a Spray glider that accumulated biofouling during a 102-day mission as estimated from a flight model.
+Todd et al. (2017) show a similar change in the angle of attack from ADCP measurements.</p>
+</div>
+</div>
+<div class="section" id="piloting-recommendations">
+<h2><span class="section-number">5.3. </span>Piloting recommendations<a class="headerlink" href="#piloting-recommendations" title="Permalink to this headline">¶</a></h2>
+<p>Multiple dives between surfacings should be kept at the same depth in order to use the DAC in depth dependent currents calculation.
+Since the DAC estimate is actually a time average of the horizontal currents along a glider’s three-dimensional path between surfacings, interpretation of the DAC estimate as a depth average depends on uniform sampling of the water column between surfacings.
+For a well-trimmed glider with nearly constant vertical velocity during descent and ascent, this is a valid interpretation.
+Multiple dive/climb cycles to the same depth between surfacings, as may take place in shallow water or to minimize the time on the surface in hazardous areas, reduces the temporal and spatial resolution in DAC estimates.
+Dive/climb cycles to different maximum depths between surfacings (e.g., across a bathymetric slope) result in a current estimate that is biased toward the part of the water column in which the glider spends the most time and should not be interpreted as DAC.</p>
+<p>During a mission a U-turn procedure should be considered to check the consistency of the DAC before and after the turn as described in Rudnick et al. (2018).
+Estimates of depth-average currents from gliders have typical accuracies of 0.01-0.02 m s-1 and negligible bias (Eriksen et al. 2001, Davis et al. 2003, Todd et al. 2011, Rudnick et al. 2018).
+In the absence of independent measurements for cross calibration (e.g., from a collocated ship or mooring), the accuracy of DAC currents may be assessed by examining the behavior during changes in horizontal sampling direction (e.g., Todd et al. 2011, Rudnick et al. 2018).</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
