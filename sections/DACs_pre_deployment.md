@@ -5,7 +5,9 @@ Degaussing battery packs before installation is recommended.
 After each degaussing of the battery pack, a careful compass calibration needs to be performed in order to take into account the change in the magnetic environment where the compass is located.
 
 ## Ballasting requirements
-- XXX
+Vehicle: 
+- Good ballast to ensure stable flight
+- Record accurate mass
 
 ## Compass calibration
 - XXX
