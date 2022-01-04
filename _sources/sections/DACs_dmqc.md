@@ -19,3 +19,8 @@ One could describe different levels of flight models (with increasing precision)
 Finally, surface drift should be estimated from successive GPS fixes during pre- and post-dive surface intervals. 
 The displacement of a glider while on the surface after its final pre-dive GPS fix and before its first post-dive GPS fix should then be subtracted from the displacement between those two GPS fixes; dive duration should be similarly adjusted relative to the time between pre- and post-dive GPS fixes.
 
+For Spray it takes about  60 s for the wing to rotate to vertical to get a GPS fix. 
+This correction tends to be small. 
+This correction is mentioned in the Appendix of Rudnick et al. (2018).
+
+
