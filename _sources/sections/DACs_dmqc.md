@@ -23,4 +23,6 @@ For Spray it takes about  60 s for the wing to rotate to vertical to get a GPS f
 This correction tends to be small. 
 This correction is mentioned in the Appendix of Rudnick et al. (2018).
 
+## Quality Control, inter-comparison
+Here we might outline some sanity checks from DAC magnitude, EM flow meters and ADCP first bins to make sure drag is correctly estimated, (and DAC orientation for compass calibrations)
 
