@@ -34,4 +34,15 @@ DAC contains not only geostrophic currents but also ageostrophic currents includ
 ## Flight models
 
 ### Seaglider
+- XXX
+
+### Spray
+- XXX
+
+### Seaexplorer
+- XXX
+
+### Slocum
+- XXX
+
 
