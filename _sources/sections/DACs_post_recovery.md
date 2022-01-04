@@ -1,3 +1,3 @@
 # Post-recovery operations and calibrations
 
-- XXXX
+- add brief list of actions which have to be redo, i.e. compass calibration etc?
