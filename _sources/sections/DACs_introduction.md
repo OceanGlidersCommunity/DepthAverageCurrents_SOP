@@ -34,7 +34,19 @@ DAC contains not only geostrophic currents but also ageostrophic currents includ
 ## Flight models
 
 ### Seaglider
-- XXX
+Seagliders (and Deepgliders) estimate a Depth Average Current (DAC) as the difference between GPS-tracked over ground and dead-reckoned displacement. 
+This estimate relies on an accurate determination of through-water displacement, principally estimated using compass heading, vehicle pitch, variable buoyancy engine position, and vertical velocity measurements along with the Seaglider flight model. 
+To briefly summarize Eriksen et al. 2001, Frakja-Williams et al. 2011, Bennett et al. 2019, and Bennett et al. 2021, this flight model employs multivariate regressions to determine vehicle-specific flight parameters including lift and drag coefficients as well as vehicle reference volume during steady flight (accelerations during variable buoyancy engine operations and turns are excluded by the regressions).
+Assuming steady flight, a balance between lift, drag, and buoyancy forces, this regression seeks to minimize the difference between measured and estimated glider vertical velocity while determining the vehicle’s angle of attack. 
+Given the obtained flight parameters, the momentum-balance equations of the buoyancy-pitch flight model then can be used to estimate vehicle speed and displacement both during steady flight and accelerations at the beginning and apogee of the profile.
+
+This model is used both during and after missions to obtain optimal flight parameters and/or reprocess dive-climb cycles as needed, recognizing that certain parameters may change as a mission progresses. 
+After a dive-climb cycle is completed, the DAC estimate is tagged at the midpoint location and time between surfacings, generally dive apogee where the vehicle reaches a maximum dive depth. 
+Recent independent measurements of glider velocities via onboard velocimeter (Bennett et al. 2019) and acoustic tracking range (Bennett et al. 2021) have aided in the development of an improved automated flight model system capable of recommending updated flight parameters in near-real time as a mission progresses. 
+Independent of these adjustments, however, results confirm the cross-track component of the DAC, used to estimate depth-dependent geostrophic flows, to be accurate within 1 cm/s. 
+
+The basestation processing code, including the automated flight model system (FMS), has been made available to the commercial manufacturer.
+
 
 ### Spray
 - XXX
