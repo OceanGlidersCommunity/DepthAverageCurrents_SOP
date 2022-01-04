@@ -1,3 +1,10 @@
 # Sensors and integrations 
 
-- XXXX
+## Compass
+
+- table
+- XXX
+
+## GPS
+
+- XXX
