@@ -33,7 +33,8 @@ Additional authors joined: Bastien Y. Queste, Orens de Fommervault, Jim Bennett,
 ## Contributions 
 Alice Pietri participated in the initial redaction of this SOP  together with Anthony Bosse, Robert Todd and Soeren Thomsen. Ensured the integrity of the structure of the document and revised the draft regularly. 
 
-Anthony Bosse participated in the initial redaction of this SOP together with Alice Pietri, Robert Todd and Soeren Thomsen. Provided various inputs and oversaw the integration of inputs by other authors. 
+Anthony Bosse participated in the initial redaction of this SOP together with Alice Pietri, Robert Todd and [Soeren Thomsen](https://github.com/soerenthomsen). 
+Provided various inputs and oversaw the integration of inputs by other authors. 
  
 Robert Todd participated in the initial draft of the SOP together with Alice Pietri and Anthony Bosse, wrote several parts of this document and of the DMQC section. 
 
