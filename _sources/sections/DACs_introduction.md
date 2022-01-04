@@ -49,10 +49,29 @@ The basestation processing code, including the automated flight model system (FM
 
 
 ### Spray
-- XXX
+The details of the DAC estimate for Spray gliders are given by Rudnick et al. 2018. 
+In brief, horizontal displacement through the water is estimated during each 8-second interval between measurements of pitch, heading, and pressure. 
+Horizontal displacement dr is computed from the change in pressure, measured pitch, and an assumed angle of attack of 3°. 
+Northward and eastward displacements are then computed using measured heading. 
+These incremental displacements are summed over an entire dive with corrections for times when a glider is nearly stalled or otherwise not flying as expected (e.g., while backing off the surface, during the bottom turn, while drifting on the surface; see details in the appendix of Rudnick et al. 2018). 
 
 ### Seaexplorer
-- XXX
+Since 2020, the dead-reckoning of the SeaExplorer is an embedded algorithm. 
+The dead-reckoned position of the SeaExplorer glider is estimated each 20s (10s during rollover periods) using compass heading and pitch, and depth measurements. 
+Vertical velocity is computed from time and depth variations, while a steady flight model estimates the angle of attack and the horizontal speed of the glider from pitch and vertical velocity. 
+The steady flight model is embedded in the glider in the form of a table giving the relations between pitch and Vx/Vz ratio. 
+Displacement of the glider in ENU parameters is computed using measured heading (a spatially variable magnetic declination is stored onboard the glider) and the haversine formula. 
+Dead-reckoned positions are stored in the navigation file, which can be downloaded by IRIDIUM, together with GPS positions. 
+A Boolean value indicates clearly whether the position is dead-reckoned or real GPS fixes. 
+SeaExplorer flight model has been evaluated using ADCPs measurements in the nearest sampling cell (ALSEAMAR technical note) and following the methodology of (Todd et al., 2017). 
+Additional experiments have been conducted using an underwater GIB-FT GPS tracking system. 
+Results have shown that most of the time the difference between ADCP estimates and flight model outputs are below 0.1 m/s with a median absolute difference of about 0.03 m/s (Homrani et al., in prep).
+
+After a dive cycle is completed, the DAC can be computed as the difference between GPS-tracked over ground (only GPS fixes with a quality flag equal to “A” are considered) and dead-reckoned displacement. 
+At the current stage, a NMEA sentence is sent by the glider when it surfaces. 
+The sentence provides the DAC estimated during the previous cycle (DAC water current speed (m/s) and direction (°)). 
+DAC accuracy has been assessed by comparison with platform independent measurements, i.e. moored ADCP, ship-ADCP and glider-ADCP. 
+The median absolute difference was estimated to be 0.025 m/s  (ALSEAMAR technical note and Homrani et al., in prep.)
 
 ### Slocum
 - XXX
