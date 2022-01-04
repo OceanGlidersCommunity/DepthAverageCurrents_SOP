@@ -19,7 +19,7 @@
 1) Initial SOP was drafted by Alice Pietri, Anthony Bosse and Robert Todd.
 
 2) Two expert sessions during OceanGliders Best Practice Workshop, May 11 - 25 2021. 
-Additional authors joined: Bastien Y.Queste, Orens de Fommervault, Jim Bennett, Ilker Fer, Jake Steinberg, James Bennett, Estelle Dumont
+Additional authors joined: Bastien Y. Queste, Orens de Fommervault, Jim Bennett, Ilker Fer, Jake Steinberg, James Bennett, Estelle Dumont
 3) First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees. 
 
 4) SOP moved to this repository by: [Soeren Thomsen](https://github.com/soerenthomsen), Alice Pietri, Anthony Bosse and Robert Todd in January 2022.
