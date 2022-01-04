@@ -45,7 +45,7 @@ Joined the two expert sessions during the OceanGliders Best Practice Workshop in
 He coordinated the whole development process including organising multiple meetings, e.g. two expert sessions during the OceanGliders Best Practice Workshop. 
 He supported the migration to and will help to maintain the SOP on GitHub.
 
-Pierre Testor - 
+Pierre Testor provided feedback to the overall document. 
 
 Daniel L. Rudnick provided specific input on the surface drift correction for spray gliders.
 
