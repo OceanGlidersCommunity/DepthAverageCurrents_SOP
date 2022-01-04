@@ -47,12 +47,12 @@ He supported the migration to and will help to maintain the SOP on GitHub.
 
 Pierre Testor - 
 
-Daniel L. Rudnick - 
+Daniel L. Rudnick provided specific input on the surface drift correction for spray gliders.
 
-JongJin Park - wrote text and added figures on compass error to the compass calibration section and provided various inputs.  
+JongJin Park wrote text and added figures on compass error to the compass calibration section and provided various inputs.  
 
-James Bennett - provided information and wrote text on seaglider specificities and procedures. 
+James Bennett provided information and wrote text on seaglider specificities and procedures. 
 
-Orens de Fommervault - provided information and wrote text on seaexplorer specificities and procedures. 
+Orens de Fommervault provided information and wrote text on seaexplorer specificities and procedures. 
 
-Ilker Fer - provided information on slocum procedures in particular on the mission execution. 
+Ilker Fer provided information on slocum procedures in particular on the mission execution. 
