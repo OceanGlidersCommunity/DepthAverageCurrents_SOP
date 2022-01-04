@@ -300,16 +300,60 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h1><span class="section-number">3. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="compass">
 <h2><span class="section-number">3.1. </span>Compass<a class="headerlink" href="#compass" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Manufacturer, sensor</p></th>
+<th class="head"><p>Accuracy</p></th>
+<th class="head"><p>Slocum</p></th>
+<th class="head"><p>Spray</p></th>
+<th class="head"><p>Seaglider</p></th>
+<th class="head"><p>Seaexplorer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PNI, TCM3</p></td>
+<td><p>0.5º</p></td>
+<td><p>x</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>PNI, TCM2.5</p></td>
+<td><p>0.8º</p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>PNI, TCM Prime</p></td>
+<td><p>1º</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sparton, SPD3003D</p></td>
+<td><p>to be documented</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>x</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Known issues:</p>
 <ul class="simple">
-<li><p>table</p></li>
-<li><p>XXX</p></li>
+<li><p>Compass calibration needed</p></li>
+<li><p>Old Seaglider software (not sure if still current) used to take several seconds to wait for values to converge before returning the final value.</p></li>
 </ul>
 </div>
 <div class="section" id="gps">
 <h2><span class="section-number">3.2. </span>GPS<a class="headerlink" href="#gps" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>XXX</p></li>
+<li><p>Garmin 15H-W (SeaGlider)</p></li>
+<li><p>EB-870 GPS engine board with a JDGA QVA Active GPS Antenna (SeaExplorer)</p></li>
 </ul>
+<p>Known issues: When gliders drift on surface before the first GPS fix, it needs to be corrected. Fix duration / HDOP minimum requirements can be set by users on some glider models.</p>
 </div>
 </div>
 
