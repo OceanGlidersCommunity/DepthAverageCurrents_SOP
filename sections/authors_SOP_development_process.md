@@ -1,9 +1,9 @@
 # Authors, development process and contributions
 
 ## Authors
-  1. Alice Pietri
-  2. Anthony Bosse
-  3. Robert Todd
+  1. [Alice Pietri](https://github.com/AlicePietri), *IMARPE-FONDECYT, Peru,* 
+  2. [Anthony Bosse](https://github.com/AnthonyBosse), *MIO, Aix-Marseille University, Marseille, France,*
+  3. [Robert Todd](https://github.com/rtodd-WHOI), *WHOI, Woods Hole, MA, USA,* 
   4. [Bastien Y. Queste](https://github.com/bastienqueste), *Department of Marine Science, University of Gothenburg, Gothenburg, Sweden,* [0000-0002-3786-2275](https://orcid.org/0000-0002-3786-2275)
   1. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   2. Pierre Testor 
