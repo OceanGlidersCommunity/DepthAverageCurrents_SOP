@@ -2,4 +2,5 @@
 
 ## Required Metadata and Real Time Data Processing
 
-- XXX 
+- link to OceanGliders Format 1.0 requirements
+- Set Angle of Attack parameters for slocum? 
