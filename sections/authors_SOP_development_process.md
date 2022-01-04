@@ -8,7 +8,7 @@
   1. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   2. [Pierre Testor](https://github.com/ptestor), *CNRS-Sorbonne Universités (UPMC Univ. Pierre et Marie Curie, Paris 06)-CNRS-IRD-MNHN, UMR 7159, Laboratoire d’Océanographie et de Climatologie (LOCEAN), Institut Pierre Simon Laplace (IPSL), Observatoire Ecce Terra, Paris, France*, [0000-0002-8038-9479](https://orcid.org/0000-0002-8038-9479) 
   3. Daniel L. Rudnick, *Scripps Institution of Oceanography, La Jolla, CA, USA*
-  4. JongJin Park 
+  4. JongJin Park, *Kyungpook National University, Daegu, South Korea* 
   5. Ilker Fer
   6. Orens de Fommervault
   7. Jake Steinberg
