@@ -27,7 +27,19 @@ A residual heading- and pitch- dependent error with RMS size of 1.5° remains; t
 A constant magnetic declination for the deployment region is stored onboard the glider; spatially varying magnetic declination can be applied in post-processing. 
 
 ### Seaexplorer
-- XXX
+Here basic recommendations about compass calibration for the seaexplorer: 
+
+The compass have to be calibrated in the following cases:
+- After payload hardware modification
+- Upon change of mission location
+- After a ballasting procedure (because of added lead weights distribution)
+- At least once a year.
+
+It is also recommended to: 
+- Do the procedure  in an area of undisturbed magnetic field (e.g. forest, on a beach, at sea).
+- To level the vehicle
+- To know the true north 
+- To set the actuators in neutral position
 
 ## Compass error
 - XXX
