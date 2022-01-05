@@ -10,8 +10,8 @@
   3. Daniel L. Rudnick, *Scripps Institution of Oceanography, La Jolla, CA, USA*
   4. JongJin Park, *Kyungpook National University, Daegu, South Korea* 
   5. [Ilker Fer](https://github.com/ilkerf)
-  6. Orens de Fommervault
-  7. Jake Steinberg
+  6. [Orens de Fommervault](https://github.com/orensDef)
+  7. [Jake Steinberg](https://github.com/jakesteinberg)
   8. Estelle Dumont
   9. James Bennett
 
