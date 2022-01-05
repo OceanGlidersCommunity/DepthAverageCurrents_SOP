@@ -75,7 +75,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -232,7 +232,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -328,7 +328,180 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Pre-deployment operations and calibrations</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#battery-degaussing">
+   4.1. Battery degaussing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ballasting-requirements">
+   4.2. Ballasting requirements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compass-calibration">
+   4.3. Compass calibration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slocum">
+     4.3.1. Slocum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seaglider">
+     4.3.2. Seaglider
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spray">
+     4.3.3. Spray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#seaexplorer">
+     4.3.4. Seaexplorer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compass-error">
+   4.4. Compass error
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#antifounling">
+   4.5. Antifounling
+  </a>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="pre-deployment-operations-and-calibrations">
+<h1><span class="section-number">4. </span>Pre-deployment operations and calibrations<a class="headerlink" href="#pre-deployment-operations-and-calibrations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="battery-degaussing">
+<h2><span class="section-number">4.1. </span>Battery degaussing<a class="headerlink" href="#battery-degaussing" title="Permalink to this headline">¶</a></h2>
+<p>Degaussing battery packs before installation is recommended.
+After each degaussing of the battery pack, a careful compass calibration needs to be performed in order to take into account the change in the magnetic environment where the compass is located.</p>
+</div>
+<div class="section" id="ballasting-requirements">
+<h2><span class="section-number">4.2. </span>Ballasting requirements<a class="headerlink" href="#ballasting-requirements" title="Permalink to this headline">¶</a></h2>
+<p>Vehicle:</p>
+<ul class="simple">
+<li><p>Good ballast to ensure stable flight</p></li>
+<li><p>Record accurate mass</p></li>
+</ul>
+</div>
+<div class="section" id="compass-calibration">
+<h2><span class="section-number">4.3. </span>Compass calibration<a class="headerlink" href="#compass-calibration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="slocum">
+<h3><span class="section-number">4.3.1. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>XXX</p></li>
+</ul>
+</div>
+<div class="section" id="seaglider">
+<h3><span class="section-number">4.3.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h3>
+<p>We used to rely on pre-deployment compass calibrations but now perform it in-situ running two back-to-back dives at the start of the deployment using 2 different pitch and roll combinations.<br />
+We return the collected magnetometer data, then process it offline and upload a hard-iron and soft-iron correction file.<br />
+Eliminates the problem of subsequent hard-iron distortion caused by large magnetic objects like ships and rocks.<br />
+We also measure any residual hard-iron distortions due to battery pack locations and correct for that (typically none on Seaglider, somewhat present for Deepglider).</p>
+</div>
+<div class="section" id="spray">
+<h3><span class="section-number">4.3.3. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h3>
+<p>Local magnetic anomalies are measured before every deployment by moving a glider through a wide range of pitches, headings, and rolls in an area free of stray magnetic fields and estimating the local anomaly field through least squares.
+This first-order correction is stored on board the glider.
+A residual heading- and pitch- dependent error with RMS size of 1.5° remains; this residual error curve is recorded and applied in post-processing.
+A constant magnetic declination for the deployment region is stored onboard the glider; spatially varying magnetic declination can be applied in post-processing.</p>
+</div>
+<div class="section" id="seaexplorer">
+<h3><span class="section-number">4.3.4. </span>Seaexplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h3>
+<p>Here basic recommendations about compass calibration for the seaexplorer:</p>
+<p>The compass have to be calibrated in the following cases:</p>
+<ul class="simple">
+<li><p>After payload hardware modification</p></li>
+<li><p>Upon change of mission location</p></li>
+<li><p>After a ballasting procedure (because of added lead weights distribution)</p></li>
+<li><p>At least once a year.</p></li>
+</ul>
+<p>It is also recommended to:</p>
+<ul class="simple">
+<li><p>Do the procedure  in an area of undisturbed magnetic field (e.g. forest, on a beach, at sea).</p></li>
+<li><p>To level the vehicle</p></li>
+<li><p>To know the true north</p></li>
+<li><p>To set the actuators in neutral position</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="compass-error">
+<h2><span class="section-number">4.4. </span>Compass error<a class="headerlink" href="#compass-error" title="Permalink to this headline">¶</a></h2>
+<p>There is a way to quantify compass error after calibration.
+That may be worthwhile to be addressed.
+People often do that on land.
+Our team is checking the compass error all the time before deployment.
+After calibration, the compass error is around 1 deg or less.
+After a month-long mission, the error does not change much in our case. If not doing the compass calibration, the error goes up to 5deg usually and up to more than 10 deg (an exceptional case).</p>
+<p>If it helps, I added  figures of compass error measured before and after compass calibration.</p>
+<ul class="simple">
+<li><p>images</p></li>
+</ul>
+<p>I have looked up the old compass error estimates according to pitch, since Pierre asked about it. Note that those results are before compass calibration. Once being done with calibration, such pitch-dependency of compass error is not much significant.</p>
+<ul class="simple">
+<li><p>images</p></li>
+</ul>
+</div>
+<div class="section" id="antifounling">
+<h2><span class="section-number">4.5. </span>Antifounling<a class="headerlink" href="#antifounling" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>XXX</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -458,15 +631,13 @@ After a month-long mission, the error does not change much in our case. If not d
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 

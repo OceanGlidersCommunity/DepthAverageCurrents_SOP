@@ -75,7 +75,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -232,7 +232,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -296,7 +296,120 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Authors, development process and contributions</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#authors">
+   1.1. Authors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sop-development-process">
+   1.2. SOP development process
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributions">
+   1.3. Contributions
+  </a>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="authors-development-process-and-contributions">
+<h1><span class="section-number">1. </span>Authors, development process and contributions<a class="headerlink" href="#authors-development-process-and-contributions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="authors">
+<h2><span class="section-number">1.1. </span>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="https://github.com/AlicePietri">Alice Pietri</a>, <em>IMARPE-FONDECYT, Peru,</em></p></li>
+<li><p><a class="reference external" href="https://github.com/AnthonyBosse">Anthony Bosse</a>, <em>MIO, Aix-Marseille University, Marseille, France,</em></p></li>
+<li><p><a class="reference external" href="https://github.com/rtodd-WHOI">Robert Todd</a>, <em>WHOI, Woods Hole, MA, USA,</em></p></li>
+<li><p><a class="reference external" href="https://github.com/bastienqueste">Bastien Y. Queste</a>, <em>Department of Marine Science, University of Gothenburg, Gothenburg, Sweden,</em> <a class="reference external" href="https://orcid.org/0000-0002-3786-2275">0000-0002-3786-2275</a></p></li>
+<li><p><a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a>, <em>LOCEAN, ISPL, Sorbonne University, Paris, France,</em> <a class="reference external" href="https://orcid.org/0000-0002-0598-8340">0000-0002-0598-8340</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ptestor">Pierre Testor</a>, <em>CNRS-Sorbonne Universités (UPMC Univ. Pierre et Marie Curie, Paris 06)-CNRS-IRD-MNHN, UMR 7159, Laboratoire d’Océanographie et de Climatologie (LOCEAN), Institut Pierre Simon Laplace (IPSL), Observatoire Ecce Terra, Paris, France</em>, <a class="reference external" href="https://orcid.org/0000-0002-8038-9479">0000-0002-8038-9479</a></p></li>
+<li><p>Daniel L. Rudnick, <em>Scripps Institution of Oceanography, La Jolla, CA, USA</em></p></li>
+<li><p>JongJin Park, <em>Kyungpook National University, Daegu, South Korea</em></p></li>
+<li><p><a class="reference external" href="https://github.com/ilkerf">Ilker Fer</a></p></li>
+<li><p>Orens de Fommervault</p></li>
+<li><p>Jake Steinberg</p></li>
+<li><p>Estelle Dumont</p></li>
+<li><p>James Bennett</p></li>
+</ol>
+</div>
+<div class="section" id="sop-development-process">
+<h2><span class="section-number">1.2. </span>SOP development process<a class="headerlink" href="#sop-development-process" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Initial SOP was drafted by Alice Pietri, Anthony Bosse and Robert Todd.</p></li>
+<li><p>Two expert sessions during OceanGliders Best Practice Workshop, May 11 - 25 2021.
+Additional authors joined: Bastien Y. Queste, Orens de Fommervault, Jim Bennett, Ilker Fer, Jake Steinberg, James Bennett, Estelle Dumont</p></li>
+<li><p>First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees.</p></li>
+<li><p>SOP moved to this repository by: <a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a>, Alice Pietri, Anthony Bosse and Robert Todd in January 2022.</p></li>
+<li><p>Additional authors joined on GitHub prior to the community review:</p></li>
+<li><p>4 months community review on GitHub starting early 2022 until mid 2022.</p></li>
+<li><p>Additional authors joined on GitHub during the community review:</p></li>
+</ol>
+</div>
+<div class="section" id="contributions">
+<h2><span class="section-number">1.3. </span>Contributions<a class="headerlink" href="#contributions" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/AlicePietri">Alice Pietri</a> participated in the initial redaction of this SOP  together with Anthony Bosse, Robert Todd and Soeren Thomsen. Ensured the integrity of the structure of the document and revised the draft regularly.</p>
+<p>Anthony Bosse participated in the initial redaction of this SOP together with <a class="reference external" href="https://github.com/AlicePietri">Alice Pietri</a>, Robert Todd and <a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a>.
+Provided various inputs and oversaw the integration of inputs by other authors.</p>
+<p>Robert Todd participated in the initial draft of the SOP together with <a class="reference external" href="https://github.com/AlicePietri">Alice Pietri</a> and Anthony Bosse, wrote several parts of this document and of the DMQC section.</p>
+<p><a class="reference external" href="https://github.com/bastienqueste">Bastien Y. Queste</a> wrote several paragraphs and provided inputs.<br />
+Joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021.</p>
+<p><a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a> Initiated the development of this SOP together with Alice Pietri and Anthony Bosse.
+He coordinated the whole development process including organising multiple meetings, e.g. two expert sessions during the OceanGliders Best Practice Workshop.
+He supported the migration to and will help to maintain the SOP on GitHub.</p>
+<p>Pierre Testor provided feedback to the overall document.</p>
+<p>Daniel L. Rudnick provided specific input on the surface drift correction for spray gliders.</p>
+<p>JongJin Park wrote text and added figures on compass error to the compass calibration section and provided various inputs.</p>
+<p>James Bennett provided information and wrote text on seaglider specificities and procedures.</p>
+<p>Orens de Fommervault provided information and wrote text on seaexplorer specificities and procedures.</p>
+<p>Ilker Fer provided information on slocum procedures in particular on the mission execution.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -314,7 +427,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p><a class="reference external" href="https://github.com/ptestor">Pierre Testor</a>, <em>CNRS-Sorbonne Universités (UPMC Univ. Pierre et Marie Curie, Paris 06)-CNRS-IRD-MNHN, UMR 7159, Laboratoire d’Océanographie et de Climatologie (LOCEAN), Institut Pierre Simon Laplace (IPSL), Observatoire Ecce Terra, Paris, France</em>, <a class="reference external" href="https://orcid.org/0000-0002-8038-9479">0000-0002-8038-9479</a></p></li>
 <li><p>Daniel L. Rudnick, <em>Scripps Institution of Oceanography, La Jolla, CA, USA</em></p></li>
 <li><p>JongJin Park, <em>Kyungpook National University, Daegu, South Korea</em></p></li>
-<li><p>Ilker Fer</p></li>
+<li><p><a class="reference external" href="https://github.com/ilkerf">Ilker Fer</a></p></li>
 <li><p>Orens de Fommervault</p></li>
 <li><p>Jake Steinberg</p></li>
 <li><p>Estelle Dumont</p></li>
@@ -398,15 +511,13 @@ He supported the migration to and will help to maintain the SOP on GitHub.</p>
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 

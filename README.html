@@ -75,7 +75,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -231,7 +231,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -267,7 +267,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -317,7 +317,141 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>OceanGliders Depth Average Currents (DACs) SOP</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#community-review">
+   Community review
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#who-is-invited-to-review">
+     Who is invited to review?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-contribute">
+     How to contribute
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps">
+   Next steps
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions">
+   Questions?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-of-conduct">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <p><img alt="oceangliders" src="_images/logo-ocean-gliders.png" /></p>
+<p>WORK IN PROGRESS until January 7 2022</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="oceangliders-depth-average-currents-dacs-sop">
+<h1>OceanGliders Depth Average Currents (DACs) SOP<a class="headerlink" href="#oceangliders-depth-average-currents-dacs-sop" title="Permalink to this headline">¶</a></h1>
+<p>This <a class="reference external" href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP">GitHub repository</a> is for the <a class="reference external" href="https://www.oceangliders.org">OceanGliders</a> Depth Average Currents (DACs) Standard Operating Procedure (SOP).</p>
+<p>Read the SOP <a class="reference external" href="https://oceangliderscommunity.github.io/DepthAverageCurrents_SOP/sections/authors_SOP_development_process.html">here</a>.</p>
+<p>Everyone is welcome to join the SOP at any time.</p>
+<div class="section" id="community-review">
+<h2>Community review<a class="headerlink" href="#community-review" title="Permalink to this headline">¶</a></h2>
+<p>The community review will be opened in early 2022.</p>
+<div class="section" id="who-is-invited-to-review">
+<h3>Who is invited to review?<a class="headerlink" href="#who-is-invited-to-review" title="Permalink to this headline">¶</a></h3>
+<p>Constructive feedback by anyone is welcome.
+We encourage both experts and new gliders users who want to start observing oxygen to feedback on the document.
+For example: Experts are welcome to critically assess the specific methods and uncertainty ranges outlined in the SOP.
+New users can help to improve the SOP by providing a feedback from the user perspective.
+Please <a class="reference external" href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/discussions">let us know that you use the SOP</a>.</p>
+</div>
+<div class="section" id="how-to-contribute">
+<h3>How to contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h3>
+<p>See contributer guideline <a class="reference external" href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/blob/main/CONTRIBUTING.md">here</a></p>
+</div>
+</div>
+<div class="section" id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>4 months community review on GitHub starting in early 2022</p></li>
+<li><p>Follow the requirements for the <a class="reference external" href="https://www.goosocean.org">GOOS</a> endorsement process as outline in <a class="reference external" href="http://dx.doi.org/10.25607/OBP-926">Hermes 2020</a></p></li>
+<li><p>Depositing of first major SOP release at the <a class="reference external" href="https://www.oceanbestpractices.org">Ocean Best Practice System (OBPS)</a> + doi by OBPS.</p></li>
+<li><p>Submission of shorter version to <a class="reference external" href="https://www.frontiersin.org/research-topics/7173/best-practices-in-ocean-observing">Frontiers: Research Topic Best Practices in Ocean Observing</a> for peer-review in mid 2022</p></li>
+</ol>
+<p>The main SOP document will always reside in this GitHub repository to allow updates within the OceanGliders community at any time.
+After major revisions regular peer-reviewed updates are planned.</p>
+</div>
+<div class="section" id="questions">
+<h2>Questions?<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
+<p>Do you have any questions related to depth average currents (DACs) measurements on gliders?
+Or do you struggle to comment the SOP document?
+Just raise a question <a class="reference external" href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/discussions">here</a>.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This work is licensed under a <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Generic License</a>.</p>
+</div>
+<div class="section" id="code-of-conduct">
+<h2>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permalink to this headline">¶</a></h2>
+<p>Please read and follow our <a class="reference external" href="https://github.com/OceanGlidersCommunity/OceanGliders/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>.</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -411,15 +545,13 @@ Just raise a question <a class="reference external" href="https://github.com/Oce
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 

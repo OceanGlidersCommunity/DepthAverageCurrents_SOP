@@ -9,7 +9,7 @@
   2. [Pierre Testor](https://github.com/ptestor), *CNRS-Sorbonne Universités (UPMC Univ. Pierre et Marie Curie, Paris 06)-CNRS-IRD-MNHN, UMR 7159, Laboratoire d’Océanographie et de Climatologie (LOCEAN), Institut Pierre Simon Laplace (IPSL), Observatoire Ecce Terra, Paris, France*, [0000-0002-8038-9479](https://orcid.org/0000-0002-8038-9479) 
   3. Daniel L. Rudnick, *Scripps Institution of Oceanography, La Jolla, CA, USA*
   4. JongJin Park, *Kyungpook National University, Daegu, South Korea* 
-  5. Ilker Fer
+  5. [Ilker Fer](https://github.com/ilkerf)
   6. Orens de Fommervault
   7. Jake Steinberg
   8. Estelle Dumont
