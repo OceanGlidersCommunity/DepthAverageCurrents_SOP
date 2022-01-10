@@ -1,6 +1,6 @@
 ![oceangliders](images/logo-ocean-gliders.png)
 
-WORK IN PROGRESS until January 7 2022
+WORK IN PROGRESS until January 14 2022
 
 # OceanGliders Depth Average Currents (DACs) SOP
 
