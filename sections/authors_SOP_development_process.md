@@ -31,12 +31,15 @@ Additional authors joined: Bastien Y. Queste, Orens de Fommervault, Jim Bennett,
 7) Additional authors joined on GitHub during the community review: 
 
 ## Contributions 
-[Alice Pietri](https://github.com/AlicePietri) participated in the initial redaction of this SOP  together with Anthony Bosse, Robert Todd and Soeren Thomsen. Ensured the integrity of the structure of the document and revised the draft regularly. 
+[Alice Pietri](https://github.com/AlicePietri) participated in the initial redaction of this SOP together with Anthony Bosse, Robert Todd and Soeren Thomsen. 
+She co-chaired two Ocean Currents expert sessions during the OceanGliders Best Practice workshop in May 2021. 
+Ensured the integrity of the structure of the document and revised the draft regularly. 
 
 Anthony Bosse participated in the initial redaction of this SOP together with [Alice Pietri](https://github.com/AlicePietri), Robert Todd and [Soeren Thomsen](https://github.com/soerenthomsen). 
+He co-chaired two Ocean Currents expert sessions during the OceanGliders Best Practice workshop in May 2021.
 Provided various inputs and oversaw the integration of inputs by other authors. 
  
-Robert Todd participated in the initial draft of the SOP together with [Alice Pietri](https://github.com/AlicePietri) and Anthony Bosse, wrote several parts of this document and of the DMQC section. 
+Robert Todd participated in the initial draft of the SOP together with [Alice Pietri](https://github.com/AlicePietri) and Anthony Bosse, wrote several parts of this document and of the DMQC section. He co-chaired two Ocean Currents expert sessions during the OceanGliders Best Practice workshop in May 2021.
 
 [Bastien Y. Queste](https://github.com/bastienqueste) wrote several paragraphs and provided inputs.  
 Joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021. 
