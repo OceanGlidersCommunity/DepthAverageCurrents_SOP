@@ -1,9 +1,9 @@
 # Authors, development process and contributions
 
 ## Authors
-  1. [Alice Pietri](https://github.com/AlicePietri), *IMARPE-FONDECYT, Peru,* 
-  2. [Anthony Bosse](https://github.com/AnthonyBosse), *MIO, Aix-Marseille University, Marseille, France,*
-  3. [Robert Todd](https://github.com/rtodd-WHOI), *WHOI, Woods Hole, MA, USA,* 
+  1. [Alice Pietri](https://github.com/AlicePietri), *IMARPE-FONDECYT, Peru,* [0000-0003-1111-9640](https://orcid.org/0000-0003-1111-9640)
+  2. [Anthony Bosse](https://github.com/AnthonyBosse), *MIO, Aix-Marseille University, Marseille, France,* [0000-0001-6968-3805](https://orcid.org/0000-0001-6968-3805)
+  3. [Robert Todd](https://github.com/rtodd-WHOI), *WHOI, Woods Hole, MA, USA,* [0000-0002-6854-7729](https://orcid.org/0000-0002-6854-7729)
   4. [Bastien Y. Queste](https://github.com/bastienqueste), *Department of Marine Science, University of Gothenburg, Gothenburg, Sweden,* [0000-0002-3786-2275](https://orcid.org/0000-0002-3786-2275)
   1. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   2. [Pierre Testor](https://github.com/ptestor), *CNRS-Sorbonne Universités (UPMC Univ. Pierre et Marie Curie, Paris 06)-CNRS-IRD-MNHN, UMR 7159, Laboratoire d’Océanographie et de Climatologie (LOCEAN), Institut Pierre Simon Laplace (IPSL), Observatoire Ecce Terra, Paris, France*, [0000-0002-8038-9479](https://orcid.org/0000-0002-8038-9479) 
