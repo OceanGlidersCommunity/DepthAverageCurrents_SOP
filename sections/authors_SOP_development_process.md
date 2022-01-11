@@ -7,9 +7,10 @@
   4. [Bastien Y. Queste](https://github.com/bastienqueste), *Department of Marine Science, University of Gothenburg, Gothenburg, Sweden,* [0000-0002-3786-2275](https://orcid.org/0000-0002-3786-2275)
   1. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   2. [Pierre Testor](https://github.com/ptestor), *CNRS-Sorbonne Universités (UPMC Univ. Pierre et Marie Curie, Paris 06)-CNRS-IRD-MNHN, UMR 7159, Laboratoire d’Océanographie et de Climatologie (LOCEAN), Institut Pierre Simon Laplace (IPSL), Observatoire Ecce Terra, Paris, France*, [0000-0002-8038-9479](https://orcid.org/0000-0002-8038-9479) 
-  3. Daniel L. Rudnick, *Scripps Institution of Oceanography, La Jolla, CA, USA*
+  3. Daniel L. Rudnick, *Scripps Institution of Oceanography, La Jolla, CA, USA* [0000-0002-2624-7074](https://orcid.org/0000-0002-2624-7074)
   4. JongJin Park, *Kyungpook National University, Daegu, South Korea* 
-  5. [Ilker Fer](https://github.com/ilkerf)
+  5. [Ilker Fer](https://github.com/ilkerf), *XXXX, Bergen, Norway* [0000-0002-2427-2532](https://orcid.org/
+0000-0002-2427-2532)
   6. [Orens de Fommervault](https://github.com/orensDef)
   7. [Jake Steinberg](https://github.com/jakesteinberg)
   8. Estelle Dumont
