@@ -12,7 +12,7 @@
   5. [Ilker Fer](https://github.com/ilkerf), *Geophysical Institute, University of Bergen, Bergen, Norway* [0000-0002-2427-2532](https://orcid.org/
 0000-0002-2427-2532)
   6. [Orens Pasqueron de Fommervault](https://github.com/orensDef), *ALSEAMAR-ALCEN, France,* [0000-0001-7418-0874](https://orcid.org/0000-0001-7418-0874)
-  7. [Jake Steinberg](https://github.com/jakesteinberg)
+  7. [Jacob Steinberg](https://github.com/jakesteinberg),  *WHOI, Woods Hole, MA, USA,* [0000-0002-2609-6405](https://orcid.org/0000-0002-2609-6405)
   8. Estelle Dumont
   9. James Bennett
 
