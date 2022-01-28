@@ -74,6 +74,86 @@ DAC accuracy has been assessed by comparison with platform independent measureme
 The median absolute difference was estimated to be 0.025 m/s  (ALSEAMAR technical note and Homrani et al., in prep.)
 
 ### Slocum
-- XXX
+The Slocum glider relies on a simple flight model for its navigation
+underwater. The flight model relates the horizontal velocity ($U$)
+through water to the depth rate ($v$) and the pitch ($\theta$), both
+of which are measured, as follows
+
+`
+\begin{equation} 
+U = \frac{v}{\tan(\theta + \alpha)},  (x2)
+\end{equation}
+`
+
+where $\alpha$ is the angle of attack. The Slocum glider firmware
+implements the angle of attack as a constant value, multiplied by the
+sign of the pitch. The value that the angle of attack assumes, is set by the
+user-variable `u_angle_of_attack` in radians, which defaults to 0. 
+
+For navigational purposes, the horizontal velocity is decomposed in
+eastward and northward components using the measured heading,
+corrected for the magnetic variation. The absolute horizontal velocity
+component estimates are computed from the horizontal velocity through
+water, augmented by the depth-averaged water currents estimated for
+the previous dive segment. Distances travelled, expressed in metres
+east and north, are computed by incremental integration of the
+absolute velocities at the end of each system cycle (~ 4 s). The
+Universal Transverse Mercator projection is used to map coordinates in
+metres east and north to longitude and latitude coordinates.
+
+The algorithm to estimate the depth-averaged currents essentially
+assumes that any difference in the point of surfacing between observed
+from GPS and computed by dead-reckoning, is due to a depth-averaged
+current not accounted for. Starting point of the algorithm is the last
+of a series of GPS positions taken just prior to diving, indicated in
+Figure x1 by the green flag, which is preceded by a number of GPS
+position (red dots). Whilst under water, the algorithm computes
+distances travelled north and east as explained above, indicated by
+the dashed path. This differs from the real path flown (solid lines)
+due to currents unaccounted for. The difference vector (red arrow)
+between the computed surface location (black flag) and the actual
+surface location (red flag), divided by the subsurface time yields the
+depth-averaged current.
+
+The actual surface location is not known, however, as it takes some
+time (about 30-120 seconds) before a valid GPS position is obtained. A
+surface drift velocity is computed from the sequence of GPS positions
+(indicated by the yellow dots). The actual surfacing location is then
+computed from extrapolation back in time and the glider sensor values
+`m_water_v{xy}` are published, representing the east and northward
+depth-averaged velocities, respectively. 
+
+Due to the dual use of the antenna, no GPS positions are obtained
+during communication via satellite. The drift velocity estimate is
+refined with subsequent GPS positions obtained after the satellite
+communications are dropped (second series of red dots), improving the
+estimate of the actual surface location and the glider sensor values
+`m_final_water_v{xy}` are published. The last GPS position serves as
+starting point for the next dive.
+
+At this point, it becomes also evident that the timestamp that is
+attributed to the values of `m_final_water_v{xy}` is incorrect; rather
+than the timestamp of one of the last GPS positions, the appropriate
+time would be the average time of the dive and surface positions
+(indicated by the green and red flags). This time lag can easily be
+corrected for in post-processing. 
+
+Finally, it is noted that around so-called inflection points, where
+the glider transitions from ascending to descending and vice versa,
+the flight model (x1) becomes highly inaccurate as the pitch
+approaches zero. To that end, the algorithm implements a condition
+that when the absolute value of the pitch is larger than or equal to
+11.3 degrees, the flight model is used to compute the horizontal
+velocity components; for absolute pitches smaller than this, the
+long-term averaged horizontal speed, differentiating between down and
+up casts averages. If `u_coast_time` is set to a value larger than 0
+(default setting is 7.5 s), then the algorithm uses a reduced value of
+the long-term averaged horizontal speed, where the reduction factor is
+equal to (1-*t<sub>c</sub>*/`u_coast_time`) for
+*t*<sub>c</sub><`u_coast_time`, and zero otherwise. Herein
+*t*<sub>c</sub> is the time since the absolute pitch fell below
+11.3 degrees.
+
+
 
 
