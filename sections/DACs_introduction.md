@@ -101,12 +101,18 @@ absolute velocities at the end of each system cycle (~ 4 s). The
 Universal Transverse Mercator projection is used to map coordinates in
 metres east and north to longitude and latitude coordinates.
 
+:::{figure-md} DAC_slocum
+<img src="../images/DAC_slocum.png" alt="Lag example" class="bg-primary mb-1" width="600px">
+
+Scematic on depth average currents (DACs) estimation for a Slocum glider.
+:::
+
 The algorithm to estimate the depth-averaged currents essentially
 assumes that any difference in the point of surfacing between observed
 from GPS and computed by dead-reckoning, is due to a depth-averaged
 current not accounted for. Starting point of the algorithm is the last
 of a series of GPS positions taken just prior to diving, indicated in
-Figure x1 by the green flag, which is preceded by a number of GPS
+{numref}`DAC_slocum`) by the green flag, which is preceded by a number of GPS
 position (red dots). Whilst under water, the algorithm computes
 distances travelled north and east as explained above, indicated by
 the dashed path. This differs from the real path flown (solid lines)
@@ -140,7 +146,7 @@ corrected for in post-processing.
 
 Finally, it is noted that around so-called inflection points, where
 the glider transitions from ascending to descending and vice versa,
-the flight model (x1) becomes highly inaccurate as the pitch
+the flight model (see {numref}`DAC_slocum`) becomes highly inaccurate as the pitch
 approaches zero. To that end, the algorithm implements a condition
 that when the absolute value of the pitch is larger than or equal to
 11.3 degrees, the flight model is used to compute the horizontal
