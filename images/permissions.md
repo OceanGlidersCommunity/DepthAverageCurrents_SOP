@@ -2,6 +2,8 @@
 - `filename.format` - First Name Last Name
 - 
 - `case_01_issue.png` - Soeren Thomsen
+- `DAC_slocum.png` - Lucas Merckelbach
+- `DAC_slocum.svg` - Lucas Merckelbach
 - `edit_markdown_file.png` - Soeren Thomsen
 - `EUROSEA.png` - EuroSea
 - `GROOM2_logo.png`- GROOM2
