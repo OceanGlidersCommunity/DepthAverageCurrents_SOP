@@ -76,6 +76,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -497,9 +499,77 @@ The median absolute difference was estimated to be 0.025 m/s  (ALSEAMAR technica
 </div>
 <div class="section" id="slocum">
 <h3><span class="section-number">2.3.4. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>XXX</p></li>
-</ul>
+<p>The Slocum glider relies on a simple flight model for its navigation
+underwater. The flight model relates the horizontal velocity (<span class="math notranslate nohighlight">\(U\)</span>)
+through water to the depth rate (<span class="math notranslate nohighlight">\(v\)</span>) and the pitch (<span class="math notranslate nohighlight">\(\theta\)</span>), both
+of which are measured, as follows</p>
+<p><code class="docutils literal notranslate"><span class="pre">\begin{equation}</span>&#160; <span class="pre">U</span> <span class="pre">=</span> <span class="pre">\frac{v}{\tan(\theta</span> <span class="pre">+</span> <span class="pre">\alpha)},</span>&#160; <span class="pre">(x2)</span> <span class="pre">\end{equation}</span></code></p>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is the angle of attack. The Slocum glider firmware
+implements the angle of attack as a constant value, multiplied by the
+sign of the pitch. The value that the angle of attack assumes, is set by the
+user-variable <code class="docutils literal notranslate"><span class="pre">u_angle_of_attack</span></code> in radians, which defaults to 0.</p>
+<p>For navigational purposes, the horizontal velocity is decomposed in
+eastward and northward components using the measured heading,
+corrected for the magnetic variation. The absolute horizontal velocity
+component estimates are computed from the horizontal velocity through
+water, augmented by the depth-averaged water currents estimated for
+the previous dive segment. Distances travelled, expressed in metres
+east and north, are computed by incremental integration of the
+absolute velocities at the end of each system cycle (~ 4 s). The
+Universal Transverse Mercator projection is used to map coordinates in
+metres east and north to longitude and latitude coordinates.</p>
+<div class="figure align-default" id="dac-slocum">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/DAC_slocum.png"><img alt="Lag example" class="bg-primary mb-1" src="../_images/DAC_slocum.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Scematic on depth average currents (DACs) estimation for a Slocum glider.</span><a class="headerlink" href="#dac-slocum" title="Permalink to this image">¶</a></p>
+</div>
+<p>The algorithm to estimate the depth-averaged currents essentially
+assumes that any difference in the point of surfacing between observed
+from GPS and computed by dead-reckoning, is due to a depth-averaged
+current not accounted for. Starting point of the algorithm is the last
+of a series of GPS positions taken just prior to diving, indicated in
+<a class="reference internal" href="#dac-slocum"><span class="std std-numref">Fig. 2.1</span></a>) by the green flag, which is preceded by a number of GPS
+position (red dots). Whilst under water, the algorithm computes
+distances travelled north and east as explained above, indicated by
+the dashed path. This differs from the real path flown (solid lines)
+due to currents unaccounted for. The difference vector (red arrow)
+between the computed surface location (black flag) and the actual
+surface location (red flag), divided by the subsurface time yields the
+depth-averaged current.</p>
+<p>The actual surface location is not known, however, as it takes some
+time (about 30-120 seconds) before a valid GPS position is obtained. A
+surface drift velocity is computed from the sequence of GPS positions
+(indicated by the yellow dots). The actual surfacing location is then
+computed from extrapolation back in time and the glider sensor values
+<code class="docutils literal notranslate"><span class="pre">m_water_v{xy}</span></code> are published, representing the east and northward
+depth-averaged velocities, respectively.</p>
+<p>Due to the dual use of the antenna, no GPS positions are obtained
+during communication via satellite. The drift velocity estimate is
+refined with subsequent GPS positions obtained after the satellite
+communications are dropped (second series of red dots), improving the
+estimate of the actual surface location and the glider sensor values
+<code class="docutils literal notranslate"><span class="pre">m_final_water_v{xy}</span></code> are published. The last GPS position serves as
+starting point for the next dive.</p>
+<p>At this point, it becomes also evident that the timestamp that is
+attributed to the values of <code class="docutils literal notranslate"><span class="pre">m_final_water_v{xy}</span></code> is incorrect; rather
+than the timestamp of one of the last GPS positions, the appropriate
+time would be the average time of the dive and surface positions
+(indicated by the green and red flags). This time lag can easily be
+corrected for in post-processing.</p>
+<p>Finally, it is noted that around so-called inflection points, where
+the glider transitions from ascending to descending and vice versa,
+the flight model (see <a class="reference internal" href="#dac-slocum"><span class="std std-numref">Fig. 2.1</span></a>) becomes highly inaccurate as the pitch
+approaches zero. To that end, the algorithm implements a condition
+that when the absolute value of the pitch is larger than or equal to
+11.3 degrees, the flight model is used to compute the horizontal
+velocity components; for absolute pitches smaller than this, the
+long-term averaged horizontal speed, differentiating between down and
+up casts averages. If <code class="docutils literal notranslate"><span class="pre">u_coast_time</span></code> is set to a value larger than 0
+(default setting is 7.5 s), then the algorithm uses a reduced value of
+the long-term averaged horizontal speed, where the reduction factor is
+equal to (1-<em>t<sub>c</sub></em>/<code class="docutils literal notranslate"><span class="pre">u_coast_time</span></code>) for
+<em>t</em><sub>c</sub>&lt;<code class="docutils literal notranslate"><span class="pre">u_coast_time</span></code>, and zero otherwise. Herein
+<em>t</em><sub>c</sub> is the time since the absolute pitch fell below
+11.3 degrees.</p>
 </div>
 </div>
 </div>
