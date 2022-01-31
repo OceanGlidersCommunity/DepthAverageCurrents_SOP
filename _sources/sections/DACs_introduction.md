@@ -29,8 +29,6 @@ These estimates are generally produced by dividing the difference in measured di
 DAC estimates are the starting point for most glider-based estimates of absolute horizontal currents. 
 DAC contains not only geostrophic currents but also ageostrophic currents including internal tide, inertial current, surface Ekman currents, etc.
 
-- add own Figure / schematic i.e. merge Figure Merckelback 2008 and Rudnick 2018
-
 ## Flight models
 
 ### Seaglider
