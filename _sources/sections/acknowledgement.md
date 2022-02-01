@@ -4,4 +4,6 @@ The coordination of producing this document was supported by the European Commis
 
 ![](/images/EUROSEA.png) ![](/images/GROOM2_logo.png)
 
+Robert Todd is funded by the NOAA Global Ocean Monitoring and Observing (GOMO) Program, the US Office of Naval Research, and the US National Science Foundation.
+
 This work also contributes to the Mediterranean Ocean Observing System for the Environment (MOOSE), which is funded by the CNRS-INSU and the French Ministry for Education and Research (ILICO Research Infrastructure).
