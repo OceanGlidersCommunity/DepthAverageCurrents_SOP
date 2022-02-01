@@ -23,7 +23,7 @@ We also measure any residual hard-iron distortions due to battery pack locations
 ### Spray
 Local magnetic anomalies are measured before every deployment by moving a glider through a wide range of pitches, headings, and rolls in an area free of stray magnetic fields and estimating the local anomaly field through least squares. 
 This first-order correction is stored on board the glider. 
-A residual heading- and pitch- dependent error with RMS size of 1.5° remains; this residual error curve is recorded and applied in post-processing. 
+A residual heading- and pitch- dependent error with RMS size of 1.5° remains {cite}`Rudnick2018`; this residual error curve is recorded and applied in post-processing.
 A constant magnetic declination for the deployment region is stored onboard the glider; spatially varying magnetic declination can be applied in post-processing. 
 
 ### Seaexplorer
