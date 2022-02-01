@@ -131,7 +131,6 @@ equal to (1-*t<sub>c</sub>*/`u_coast_time`) for
 
 
 
-
 ## Required Metadata and Real Time Data Processing
 
 - link to OceanGliders Format 1.0 requirements
