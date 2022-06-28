@@ -9,7 +9,7 @@ Read the SOP [here](https://oceangliderscommunity.github.io/DepthAverageCurrents
 Everyone is welcome to join the SOP at any time.
 
 ## Community review
-The community review will be opened in mid 2022.  
+The community review will be opened in mid 2022. 
 
 ### Who is invited to review?
 Constructive feedback by anyone is welcome. 
