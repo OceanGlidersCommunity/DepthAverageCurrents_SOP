@@ -6,10 +6,10 @@ This [GitHub repository](https://github.com/OceanGlidersCommunity/DepthAverageCu
 
 Read the SOP [here](https://oceangliderscommunity.github.io/DepthAverageCurrents_SOP/sections/authors_SOP_development_process.html). 
 
-Everyone is welcome to join the SOP at any time.
+Everyone is welcome to join the SOP at any time. 
 
 ## Community review
-The community review will be opened in early 2022.  
+The community review will be opened in mid 2022. 
 
 ### Who is invited to review?
 Constructive feedback by anyone is welcome. 
@@ -22,7 +22,7 @@ Please [let us know that you use the SOP](https://github.com/OceanGlidersCommuni
 See contributer guideline [here](https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/blob/main/CONTRIBUTING.md)
 
 ## Next steps
-1) 4 months community review on GitHub starting in early 2022
+1) 4 months community review on GitHub starting in mid 2022
 2) Follow the requirements for the [GOOS](https://www.goosocean.org) endorsement process as outline in [Hermes 2020](http://dx.doi.org/10.25607/OBP-926)
 3) Depositing of first major SOP release at the [Ocean Best Practice System (OBPS)](https://www.oceanbestpractices.org) + doi by OBPS.
 4) Submission of shorter version to [Frontiers: Research Topic Best Practices in Ocean Observing](https://www.frontiersin.org/research-topics/7173/best-practices-in-ocean-observing) for peer-review in mid 2022
