@@ -19,7 +19,7 @@
 ## SOP development process
 1) Initial SOP was drafted by Alice Pietri, Anthony Bosse and Robert Todd.
 
-2) Two expert sessions during OceanGliders Best Practice Workshop, May 11 - 25 2021. 
+2) Two expert sessions during OceanGliders Best Practice Workshop, May 11 - 25 2021. [Meeting Notes](https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/blob/main/meeting_notes/2021_05_12_OG_BP_workshop_DACs_session.md)
 Additional authors joined: Bastien Y. Queste, Orens de Fommervault, Jim Bennett, Ilker Fer, Jake Steinberg, James Bennett, Estelle Dumont
 3) First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees. 
 
