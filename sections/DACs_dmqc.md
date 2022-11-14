@@ -21,7 +21,7 @@ The displacement of a glider while on the surface after its final pre-dive GPS f
 
 For Spray it takes about  60 s for the wing to rotate to vertical to get a GPS fix. 
 This correction tends to be small. 
-This correction is mentioned in the Appendix of Rudnick et al. (2018).
+This correction is mentioned in the Appendix of {cite}`Rudnick2018`.
 
 ## Quality Control, inter-comparison
 Here we might outline some sanity checks from DAC magnitude, EM flow meters and ADCP first bins to make sure drag is correctly estimated, (and DAC orientation for compass calibrations)
