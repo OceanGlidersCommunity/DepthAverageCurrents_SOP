@@ -13,7 +13,7 @@ For gliders equipped with current meters that record three-dimensional flow rela
 For Seagliders, the DAC accuracy is dependent on flight regressions performed over the first few dives that determine initial lift and drag parameters. 
 These parameters should not necessarily be considered fixed for the duration of a mission and regressions should be carried out repeatedly (Bennet et al. 2019, 2021).
 
-One could describe different levels of flight models (with increasing precision): pitch only, pitch + constant angle of attack (implemented in slocum firmware), steady flight model (pitch dependent angle of attack, eg Sherman et al 2001, Merckelbach et al 2010, Frajka-Williams 2011), dynamic flight model (Merckelbach et al 2019).
+One could describe different levels of flight models (with increasing precision): pitch only, pitch + constant angle of attack (implemented in slocum firmware), steady flight model (pitch dependent angle of attack, eg Sherman et al 2001, Merckelbach et al 2010, Frajka-Williams 2011), dynamic flight model {cite:p}`merckelbach2019dynamic`.
 
 ## Surface drift correction
 Finally, surface drift should be estimated from successive GPS fixes during pre- and post-dive surface intervals. 
