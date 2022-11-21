@@ -1,2 +1,2 @@
-jupyter-book
+jupyter-book==0.12.3
 pyppeteer
