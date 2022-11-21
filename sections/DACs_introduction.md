@@ -5,7 +5,7 @@ It aims to result in high quality data and further ensures a data flow both for 
 
 ## What are DACs?
 Underwater gliders provide an estimate of the depth-average horizontal ocean currents (DAC) between each surfacing during a mission ({numref}`DAC_slocum`)). 
-These estimates are generally produced by dividing the difference in measured displacement during a dive and the displacement through the water estimated from a model of glider flight by the duration of the dive ({cite:p}`eriksen2001seaglider`, Webb Research Slocum manual 2005, {cite:p}`eriksen2001seaglider`,`rudnick2018depth`).
+These estimates are generally produced by dividing the difference in measured displacement during a dive and the displacement through the water estimated from a model of glider flight by the duration of the dive ({cite:p}`eriksen2001seaglider`, Webb Research Slocum manual 2005, {cite:p}`rudnick2018depth`).
 DAC estimates are the starting point for most glider-based estimates of absolute horizontal currents. 
 DAC contains not only geostrophic currents but also ageostrophic currents including tidal currents, inertial currents, Ekman currents, etc.
 
