@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6. Required Metadata, Real Time Data Processing &amp; Quality Control &#8212; Depth Average Currents SOP</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,16 +18,20 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -37,7 +39,6 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -77,7 +78,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -97,21 +98,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -120,10 +107,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -141,15 +127,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../README.html">
-                    OceanGliders Depth Average Currents (DACs) SOP
-                </a>
-            </li>
-        </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   OceanGliders Depth Average Currents (DACs) SOP
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="authors_SOP_development_process.html">
    1. Authors, development process and contributions
@@ -208,17 +193,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -226,179 +206,79 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="header-article row sticky-top noprint">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/DACs_rtqc.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/edit/main/sections/DACs_rtqc.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/sections/DACs_rtqc.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sections/DACs_rtqc.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/DACs_rtqc.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/DepthAverageCurrents_SOP/edit/main/sections/DACs_rtqc.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#real-time-data-processing">
    6.1. Real Time Data Processing
@@ -433,11 +313,12 @@ title="Print to PDF"
  </li>
 </ul>
 
-    </nav>
-</div>
+            </nav>
+        </div>
     </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Required Metadata, Real Time Data Processing & Quality Control</h1>
@@ -488,16 +369,15 @@ title="Print to PDF"
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="required-metadata-real-time-data-processing-quality-control">
-<h1><span class="section-number">6. </span>Required Metadata, Real Time Data Processing &amp; Quality Control<a class="headerlink" href="#required-metadata-real-time-data-processing-quality-control" title="Permalink to this headline">#</a></h1>
-<section id="real-time-data-processing">
-<h2><span class="section-number">6.1. </span>Real Time Data Processing<a class="headerlink" href="#real-time-data-processing" title="Permalink to this headline">#</a></h2>
-<section id="seaglider">
-<h3><span class="section-number">6.1.1. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">#</a></h3>
+  <div class="tex2jax_ignore mathjax_ignore section" id="required-metadata-real-time-data-processing-quality-control">
+<h1><span class="section-number">6. </span>Required Metadata, Real Time Data Processing &amp; Quality Control<a class="headerlink" href="#required-metadata-real-time-data-processing-quality-control" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="real-time-data-processing">
+<h2><span class="section-number">6.1. </span>Real Time Data Processing<a class="headerlink" href="#real-time-data-processing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="seaglider">
+<h3><span class="section-number">6.1.1. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h3>
 <p>Seagliders (and Deepgliders) estimate a Depth Average Current (DAC) as the difference between GPS-tracked over ground and dead-reckoned displacement.
 This estimate relies on an accurate determination of through-water displacement, principally estimated using compass heading, vehicle pitch, variable buoyancy engine position, and vertical velocity measurements along with the Seaglider flight model.
 To briefly summarize Eriksen et al. 2001, Frakja-Williams et al. 2011, Bennett et al. 2019, and Bennett et al. 2021, this flight model employs multivariate regressions to determine vehicle-specific flight parameters including lift and drag coefficients as well as vehicle reference volume during steady flight (accelerations during variable buoyancy engine operations and turns are excluded by the regressions).
@@ -508,17 +388,17 @@ After a dive-climb cycle is completed, the DAC estimate is tagged at the midpoin
 Recent independent measurements of glider velocities via onboard velocimeter (Bennett et al. 2019) and acoustic tracking range (Bennett et al. 2021) have aided in the development of an improved automated flight model system capable of recommending updated flight parameters in near-real time as a mission progresses.
 Independent of these adjustments, however, results confirm the cross-track component of the DAC, used to estimate depth-dependent geostrophic flows, to be accurate within 1 cm/s.</p>
 <p>The basestation processing code, including the automated flight model system (FMS), has been made available to the commercial manufacturer.</p>
-</section>
-<section id="spray">
-<h3><span class="section-number">6.1.2. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="spray">
+<h3><span class="section-number">6.1.2. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h3>
 <p>The details of the DAC estimate for Spray gliders are given by Rudnick et al. 2018.
 In brief, horizontal displacement through the water is estimated during each 8-second interval between measurements of pitch, heading, and pressure.
 Horizontal displacement dr is computed from the change in pressure, measured pitch, and an assumed angle of attack of 3°.
 Northward and eastward displacements are then computed using measured heading.
 These incremental displacements are summed over an entire dive with corrections for times when a glider is nearly stalled or otherwise not flying as expected (e.g., while backing off the surface, during the bottom turn, while drifting on the surface; see details in the appendix of Rudnick et al. 2018).</p>
-</section>
-<section id="seaexplorer">
-<h3><span class="section-number">6.1.3. </span>Seaexplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="seaexplorer">
+<h3><span class="section-number">6.1.3. </span>Seaexplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h3>
 <p>Since 2020, the dead-reckoning of the SeaExplorer is an embedded algorithm.
 The dead-reckoned position of the SeaExplorer glider is estimated each 20s (10s during rollover periods) using compass heading and pitch, and depth measurements.
 Vertical velocity is computed from time and depth variations, while a steady flight model estimates the angle of attack and the horizontal speed of the glider from pitch and vertical velocity.
@@ -534,9 +414,9 @@ At the current stage, a NMEA sentence is sent by the glider when it surfaces.
 The sentence provides the DAC estimated during the previous cycle (DAC water current speed (m/s) and direction (°)).
 DAC accuracy has been assessed by comparison with platform independent measurements, i.e. moored ADCP, ship-ADCP and glider-ADCP.
 The median absolute difference was estimated to be 0.025 m/s  (ALSEAMAR technical note and Homrani et al., in prep.)</p>
-</section>
-<section id="slocum">
-<h3><span class="section-number">6.1.4. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="slocum">
+<h3><span class="section-number">6.1.4. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h3>
 <p>The Slocum glider relies on a simple flight model for its navigation
 underwater. The flight model relates the horizontal velocity (<span class="math notranslate nohighlight">\(U\)</span>)
 through water to the depth rate (<span class="math notranslate nohighlight">\(v\)</span>) and the pitch (<span class="math notranslate nohighlight">\(\theta\)</span>), both
@@ -556,12 +436,10 @@ east and north, are computed by incremental integration of the
 absolute velocities at the end of each system cycle (~ 4 s). The
 Universal Transverse Mercator projection is used to map coordinates in
 metres east and north to longitude and latitude coordinates.</p>
-<figure class="align-default" id="dac-slocum">
+<div class="figure align-default" id="dac-slocum">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/DAC_slocum.png"><img alt="Lag example" class="bg-primary mb-1" src="../_images/DAC_slocum.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Scematic on depth average currents (DACs) estimation for a Slocum glider.</span><a class="headerlink" href="#dac-slocum" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Scematic on depth average currents (DACs) estimation for a Slocum glider.</span><a class="headerlink" href="#dac-slocum" title="Permalink to this image">¶</a></p>
+</div>
 <p>The algorithm to estimate the depth-averaged currents essentially
 assumes that any difference in the point of surfacing between observed
 from GPS and computed by dead-reckoning, is due to a depth-averaged
@@ -610,16 +488,16 @@ equal to (1-<em>t<sub>c</sub></em>/<code class="docutils literal notranslate"><s
 <em>t</em><sub>c</sub>&lt;<code class="docutils literal notranslate"><span class="pre">u_coast_time</span></code>, and zero otherwise. Herein
 <em>t</em><sub>c</sub> is the time since the absolute pitch fell below
 11.3 degrees.</p>
-</section>
-</section>
-<section id="required-metadata-and-real-time-data-processing">
-<h2><span class="section-number">6.2. </span>Required Metadata and Real Time Data Processing<a class="headerlink" href="#required-metadata-and-real-time-data-processing" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="required-metadata-and-real-time-data-processing">
+<h2><span class="section-number">6.2. </span>Required Metadata and Real Time Data Processing<a class="headerlink" href="#required-metadata-and-real-time-data-processing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>link to OceanGliders Format 1.0 requirements</p></li>
 <li><p>Set Angle of Attack parameters for slocum?</p></li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -643,11 +521,9 @@ equal to (1-<em>t<sub>c</sub></em>/<code class="docutils literal notranslate"><s
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="DACs_mission_execution.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -663,28 +539,24 @@ equal to (1-<em>t<sub>c</sub></em>/<code class="docutils literal notranslate"><s
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By The Jupyter Book community<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+    <footer class="footer">
+  <p>
     
-</div>
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
