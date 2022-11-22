@@ -15,6 +15,7 @@
   7. [Jacob Steinberg](https://github.com/jakesteinberg),  *WHOI, Woods Hole, MA, USA,* [0000-0002-2609-6405](https://orcid.org/0000-0002-2609-6405)
   8. Estelle Dumont
   9. James Bennett
+  10. [Callum Rollo](https://github.com/callumrollo), *Voice of the Ocean Foundation, Göteborg, Sweden,* [0000-0002-5134-7886](https://orcid.org/0000-0002-5134-7886)
 
 ## SOP development process
 1) Initial SOP was drafted by Alice Pietri, Anthony Bosse and Robert Todd.
@@ -63,3 +64,5 @@ James Bennett provided information and wrote text on seaglider specificities and
 [Orens Pasqueron de Fommervault](https://github.com/orensDef) provided information and wrote text on seaexplorer specificities and procedures. 
 
 [Ilker Fer](https://github.com/ilkerf) provided information on slocum procedures in particular on the mission execution. 
+
+[Callum Rollo](https://github.com/callumrollo) provided technical support related to the jupyter book deployment and helps to maintain the repo. 
