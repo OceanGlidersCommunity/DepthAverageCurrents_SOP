@@ -133,6 +133,6 @@ equal to (1-*t<sub>c</sub>*/`u_coast_time`) for
 
 ## Required Metadata and Real Time Data Processing
 
-Please read the requirments relevant for the [OceanGliders Format 1.0](https://github.com/OceanGlidersCommunity/OG-format-user-manual) before deploying your glider.
+Please read the requirements relevant for the [OceanGliders Format 1.0](https://github.com/OceanGlidersCommunity/OG-format-user-manual) before deploying your glider.
 
 - Set Angle of Attack parameters for slocum? 
