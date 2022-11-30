@@ -19,16 +19,16 @@ Collection of magnetometer data needs to be enabled during deployment in order t
 
 
 ### Spray
-Measurements of water velocity relative to a glider from the nearest sampling cells of onboard ADCPs have been used to measure Spray glider motion through the water (Todd et al. 2017). 
+Measurements of water velocity relative to a glider from the nearest sampling cells of onboard ADCPs have been used to measure Spray glider motion through the water {cite:p}`todd2017absolute`. 
 For gliders that experience severe biofouling, ADCP measurements can be used to determine time-varying angles of attack and sideslip during a mission. 
 Use of these varying angles in the flight model (including sideslip as in Todd et al. 2017 and Davis et al. 2012) can improve DAC estimates for badly fouled gliders by removing much of the correlation with a glider’s direction of motion.
 
-Rudnick et al. (2018) describe a platform-independent procedure for estimating the accuracy of glider-based DAC estimates. 
+{cite:t}`rudnick2018depth` describe a platform-independent procedure for estimating the accuracy of glider-based DAC estimates. 
 DAC estimates before and after a glider switch directions along a repeated transect are compared. 
 This technique is best applied in deep water where the assumption that actual ocean currents are identical before and after a turn is most valid.
 
 Rudnick et al. (2013) show an estimate of the changing drag coefficient of a Spray glider that accumulated biofouling during a 102-day mission as estimated from a flight model. 
-Todd et al. (2017) show a similar change in the angle of attack from ADCP measurements.
+{cite:t}`todd2017absolute` show a similar change in the angle of attack from ADCP measurements.
 
 ## Piloting recommendations 
 Multiple dives between surfacings should be kept at the same depth in order to use the DAC in depth dependent currents calculation. 
