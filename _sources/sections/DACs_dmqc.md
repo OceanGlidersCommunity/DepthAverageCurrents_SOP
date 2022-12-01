@@ -8,8 +8,8 @@ A simulation mission can also be done at various headings (e.g every 45°) to ob
 
 ## Flight models
 Flight models are used to estimate glider motion through the water from measured pitch, roll, and pressure (e.g., Merckelbach et al. 2010, 2019 for Slocum gliders, Frajka-Williams et al. 2011 for Seaglider, Rudnick et al. 2018 for Spray gliders). 
-Tuning the angle of attack used in a flight model is particularly important since the effective angle of attack changes as biofouling accumulates on a glider during a mission (Todd et al. 2017) or when the external configuration of a vehicle is changed. 
-For gliders equipped with current meters that record three-dimensional flow relative to the glider at close range, it is possible to estimate the evolving angles of attack and sideslip, which can be used to correct bias in DAC estimates that result from major biofouling (Todd et al. 2017). 
+Tuning the angle of attack used in a flight model is particularly important since the effective angle of attack changes as biofouling accumulates on a glider during a mission {cite:p}`todd2017absolute` or when the external configuration of a vehicle is changed. 
+For gliders equipped with current meters that record three-dimensional flow relative to the glider at close range, it is possible to estimate the evolving angles of attack and sideslip, which can be used to correct bias in DAC estimates that result from major biofouling {cite:p}`todd2017absolute`. 
 For Seagliders, the DAC accuracy is dependent on flight regressions performed over the first few dives that determine initial lift and drag parameters. 
 These parameters should not necessarily be considered fixed for the duration of a mission and regressions should be carried out repeatedly (Bennet et al. 2019, 2021).
 
