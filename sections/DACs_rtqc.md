@@ -18,7 +18,7 @@ The basestation processing code, including the automated flight model system (FM
 
 
 ### Spray
-The details of the DAC estimate for Spray gliders are given by Rudnick et al. 2018. 
+The details of the DAC estimate for Spray gliders are given by {cite:t}`rudnick2018depth`. 
 In brief, horizontal displacement through the water is estimated during each 8-second interval between measurements of pitch, heading, and pressure. 
 Horizontal displacement dr is computed from the change in pressure, measured pitch, and an assumed angle of attack of 3°. 
 Northward and eastward displacements are then computed using measured heading. 
