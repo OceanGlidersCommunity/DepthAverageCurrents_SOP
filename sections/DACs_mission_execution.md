@@ -37,7 +37,7 @@ For a well-trimmed glider with nearly constant vertical velocity during descent 
 Multiple dive/climb cycles to the same depth between surfacings, as may take place in shallow water or to minimize the time on the surface in hazardous areas, reduces the temporal and spatial resolution in DAC estimates. 
 Dive/climb cycles to different maximum depths between surfacings (e.g., across a bathymetric slope) result in a current estimate that is biased toward the part of the water column in which the glider spends the most time and should not be interpreted as DAC.
 
-During a mission a U-turn procedure should be considered to check the consistency of the DAC before and after the turn as described in Rudnick et al. (2018).
-Estimates of depth-average currents from gliders have typical accuracies of 0.01-0.02 m s-1 and negligible bias (Eriksen et al. 2001, Davis et al. 2003, Todd et al. 2011, Rudnick et al. 2018). 
-In the absence of independent measurements for cross calibration (e.g., from a collocated ship or mooring), the accuracy of DAC currents may be assessed by examining the behavior during changes in horizontal sampling direction (e.g., Todd et al. 2011, Rudnick et al. 2018).
+During a mission a U-turn procedure should be considered to check the consistency of the DAC before and after the turn as described in {cite:t}`rudnick2018depth`.
+Estimates of depth-average currents from gliders have typical accuracies of 0.01-0.02 m s-1 and negligible bias (Eriksen et al. 2001, Davis et al. 2003, Todd et al. 2011, {cite:p}`rudnick2018depth`). 
+In the absence of independent measurements for cross calibration (e.g., from a collocated ship or mooring), the accuracy of DAC currents may be assessed by examining the behavior during changes in horizontal sampling direction (e.g., Todd et al. 2011, {cite:p}`rudnick2018depth`).
 
