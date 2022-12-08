@@ -1,5 +1,8 @@
 title: "Depth Average Currents SOP"
+copyright: ""
+author: ""
 logo: images/logo-ocean-gliders.png
+
 execute:
   execute_notebooks: "off"
 repository:
@@ -12,6 +15,13 @@ html:
   comments:
     utterances:
       repo: "OceanGlidersCommunity/DepthAverageCurrents_SOP"
+  extra_footer: |
+    <p>  By the OceanGliders community using
+      <a href="https://jupyterbook.org/intro.html"   target="_blank">Jupyter Book</a>. 
+      This work is licensed under a 
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 Generic License.</a> 
+    </p>
+      
 bibtex_bibfiles:
     - depthaveragecurrents.bib
 sphinx:
