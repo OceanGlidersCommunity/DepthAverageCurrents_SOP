@@ -29,6 +29,7 @@ sphinx:
   config:
     bibtex_default_style: myapastyle
     bibtex_reference_style: author_year_round
+    html_show_copyright: false
 
 bibtex_reference_style      : author_year_round
 bibtex_default_style        : myapastyle
